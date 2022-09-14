@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          'display': ['"Kumbh Sans"'],
+        },
+        extend: {
+          backgroundImage: {
+            'back-pattern': "url('./images/bg-pattern-top.svg')",
+            'back-pattern2': "url('./images/bg-pattern-bottom.svg')",
+          },
+          colors: {
+            darkGray: 'hsl(0, 0%, 59%)',
+            darkCyan: 'hsl(185, 75%, 39%)',
+            darkBlue: 'hsl(229, 23%, 23%)',
+          }
+        },
+        backgroundPosition: {
+          'top-4': 'right top 38rem',
+          'top-5': 'left bottom 34rem',
+        }
+      }
+    }
+  </script>
+  <title>Profile card component | Frontend Mentor</title>
+
+</head>
+
+<body class="bg-darkCyan bg-no-repeat bg-top-5 bg-back-pattern2">
+
+  <div class="grid h-screen place-items-center bg-auto bg-no-repeat bg-top-4 bg-back-pattern">
+    
+    <div class="w-[21.5rem] rounded-lg grid grid-rows-1 gap-6 bg-white drop-shadow-2xl">
+      <div class="rounded-t-lg overflow-hidden">
+        <img class="" src="./images/bg-pattern-card.svg" alt="bg-pattern-bottom">
+      </div>
+      <div class="flex items-center justify-center -mt-[4.8rem]">
+        <img class="border-white border-4 rounded-full overflow-hidden" src="./images/image-victor.jpg" alt="person">
+      </div>
+      <div>
+        <div class="flex items-center justify-center gap-2 text-lg text-darkBlue">
+          <h2 class="font-bold"> Victor Crest</h2>
+          <span class="text-darkGray">26</span>
+        </div>
+        <div class="flex items-center justify-center">
+          <h2 class="text-darkGray">London</h2>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-3 border-t-2 text-darkBlue">
+        <div class="flex flex-col place-items-center p-8">
+          <h1 class="font-bold text-lg">80K</h1>
+          <span class="text-xs text-darkGray tracking-widest">Followers</span>
+        </div>
+        <div class="flex flex-col place-items-center p-8">
+          <h1 class="font-bold text-lg">803K</h1>
+          <span class="text-xs text-darkGray tracking-widest">Likes</span>
+        </div>
+        <div class="flex flex-col place-items-center p-8">
+          <h1 class="font-bold text-lg">1.4K</h1>
+          <span class="text-xs text-darkGray tracking-widest">Photos</span>
+        </div>
+      </div>
+
+    </div>
+
+    
+  </div>
+  <div class="flex flex-col-1 place-items-center gap-2">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>- 
+    Coded by <a href="https://www.facebook.com/NoufelLalmiOfficial" target="_blank">NoufleLalmi</a>
+  </div>
+</body>
+
+</html>
